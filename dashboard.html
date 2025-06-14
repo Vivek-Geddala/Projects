@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Welcome, {{ email }}!</h2><br>
+    <br>
+    <p>You are now logged in.</p><br>
+    <br>
+    <p>This is your dashboard.</p>
+    
+    <form method="POST" action="/logout" id="logout-form">
+        <button type="submit">Logout</button>
+    </form>
+    <form action="/delete_account" method="post" id="delete-form">
+        <button type="submit">Delete My Account</button>
+    </form>
+</body>
+</html>

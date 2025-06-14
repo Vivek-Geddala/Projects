@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div id="form-box">
+    <form method="POST">
+      <h2>Login</h2>
+      
+        Email:
+        <input type="email" name="email" required>
+        <br><br>
+        Password: <input type="password" name="password" required></td>
+        <br><br>
+        <button type="submit">Login</button>
+        <br>
+         <p><a href="#" onclick="flipToRegister()">Don't have an account? Register</a></p>
+    </form>
+   </div>
+    <script>
+    function flipToRegister() {
+        const box = document.getElementById('form-box');
+        box.classList.add('flipping');
+        setTimeout(() => {
+            window.location.href = "/register";  
+        }, 500);  
+    }
+</script>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+</body>
+</html>

@@ -1,0 +1,41 @@
+body{
+
+    background-color: rgb(92, 184, 138);
+    display: flex;             
+    justify-content: center;   
+    align-items: center;        
+    min-height: 100vh;          
+}
+h2{
+    text-align: center;
+    color: black;
+}
+p{
+    text-align: center;
+    color: black;
+    font-size: small;
+    font-family:cursive;
+}
+
+#logout-form{
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100px;
+    text-align: center;
+    position: absolute;
+    top: 30px;      
+    right: 30px;    
+}
+#delete-form{
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width:150px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;      
+    right: 30px;    
+}   
